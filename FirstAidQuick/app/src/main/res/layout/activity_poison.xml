@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodPoisoningActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Back Button -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:scaleType="fitStart"
+                app:srcCompat="?attr/homeAsUpIndicator" />
+        </FrameLayout>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Food Poisoning"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <!-- Main Image -->
+        <ImageView
+            android:id="@+id/ivMainImage"
+            android:layout_width="match_parent"
+            android:layout_height="206dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/poison"
+            tools:context=".PoisonActivity"/>
+
+        <!-- How to Help Section -->
+        <TextView
+            android:id="@+id/tvHowToHelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:text="Food Poisoning: How to help"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp" />
+
+
+        <!-- Symptoms Section -->
+        <TextView
+            android:id="@+id/tvSymptomsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:text="Common Symptoms"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/tvSymptomsHeader"
+            android:background="#000000"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivList1"
+                android:layout_width="99dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="-900dp"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/list" />
+
+            <TextView
+                android:id="@+id/tvSymptom1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="Nausea and vomiting"
+                android:textAlignment="textStart"
+                android:textColor="#000000" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivList2"
+                android:layout_width="99dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="-900dp"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/list" />
+
+            <TextView
+                android:id="@+id/tvSymptom2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="Diarrhea (may be watery or bloody)"
+                android:textAlignment="textStart"
+                android:textColor="#000000" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivList3"
+                android:layout_width="99dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="-900dp"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/list" />
+
+            <TextView
+                android:id="@+id/tvSymptom3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="Abdominal pain and cramps"
+                android:textAlignment="textStart"
+                android:textColor="#000000" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivList4"
+                android:layout_width="99dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="-900dp"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/list" />
+
+            <TextView
+                android:id="@+id/tvSymptom4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="Fever (sometimes)"
+                android:textAlignment="textStart"
+                android:textColor="#000000" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivList5"
+                android:layout_width="99dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="-900dp"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/list" />
+
+            <TextView
+                android:id="@+id/tvSymptom5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="Weakness and fatigue"
+                android:textAlignment="textStart"
+                android:textColor="#000000" />
+        </FrameLayout>
+
+        <!-- Emergency Warning Signs -->
+        <TextView
+            android:id="@+id/tvEmergencyHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:text="Seek Medical Help Immediately If:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/tvEmergencyHeader"
+            android:background="#000000"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivList6"
+                android:layout_width="99dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="-900dp"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/list" />
+
+            <TextView
+                android:id="@+id/tvEmergency1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="Blood in vomit or stools"
+                android:textAlignment="textStart"
+                android:textColor="#000000" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivList7"
+                android:layout_width="99dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="-900dp"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/list" />
+
+            <TextView
+                android:id="@+id/tvEmergency2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="High fever (over 101.5°F or 38.6°C)"
+                android:textAlignment="textStart"
+                android:textColor="#000000" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivList8"
+                android:layout_width="99dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="-900dp"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/list" />
+
+            <TextView
+                android:id="@+id/tvEmergency3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="Signs of dehydration (dry mouth, dizziness, little/no urination)"
+                android:textAlignment="textStart"
+                android:textColor="#000000" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivList9"
+                android:layout_width="99dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="-900dp"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/list" />
+
+            <TextView
+                android:id="@+id/tvEmergency4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="Symptoms last more than 3 days"
+                android:textAlignment="textStart"
+                android:textColor="#000000" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivList10"
+                android:layout_width="99dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="-900dp"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/list" />
+
+            <TextView
+                android:id="@+id/tvEmergency5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="Neurological symptoms (blurred vision, muscle weakness)"
+                android:textAlignment="textStart"
+                android:textColor="#000000" />
+        </FrameLayout>
+
+        <!-- Treatment Steps Section -->
+        <TextView
+            android:id="@+id/tvTreatmentHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:text="First Aid Treatment"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/tvTreatmentHeader"
+            android:background="#000000"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <!-- Step 1 -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvStep1Num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="1."
+                    android:textAlignment="viewStart"
+                    android:textColor="#F44336"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvStep1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Stop eating and drinking for a few hours to let stomach settle"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/tvStep1"
+            android:background="#A8A8A8"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <!-- Step 2 -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvStep2Num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="2."
+                    android:textAlignment="viewStart"
+                    android:textColor="#F44336"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvStep2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Sip small amounts of clear liquids or suck on ice chips"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/tvStep2"
+            android:background="#A8A8A8"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <!-- Step 3 -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvStep3Num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="3."
+                    android:textAlignment="viewStart"
+                    android:textColor="#F44336"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvStep3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Gradually begin eating bland, easy-to-digest foods"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/tvStep3"
+            android:background="#A8A8A8"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <!-- Step 4 -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvStep4Num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="4."
+                    android:textAlignment="viewStart"
+                    android:textColor="#F44336"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvStep4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Avoid dairy, caffeine, alcohol, nicotine, fatty/spicy foods"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/tvStep4"
+            android:background="#A8A8A8"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <!-- Step 5 -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvStep5Num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="5."
+                    android:textAlignment="viewStart"
+                    android:textColor="#F44336"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvStep5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Get plenty of rest"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/tvStep5"
+            android:background="#A8A8A8"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <!-- Step 6 -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvStep6Num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="6."
+                    android:textAlignment="viewStart"
+                    android:textColor="#F44336"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvStep6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Consider oral rehydration solutions for dehydration"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- Prevention Section -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/tvPrevention"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_arrow_drop_down"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:focusable="true"
+                android:padding="12dp"
+                android:text="Prevention Tips"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/parentPrevention"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/preventionContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="40dp"
+                        android:text="1. Wash hands, utensils and food surfaces often"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="2. Keep raw foods separate from ready-to-eat foods"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="3. Cook foods to safe temperatures (use food thermometer)"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="4. Refrigerate perishable foods promptly (within 2 hours)"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="5. When in doubt, throw it out (don't taste suspicious food)"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="6. Be cautious with raw eggs, meats, unpasteurized products"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- AI Tips Section -->
+        <TextView
+            android:id="@+id/tvAiTips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading AI-generated first aid tips..."
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:background="#EFEFEF"
+            android:elevation="2dp"/>
+
+    </LinearLayout>
+</ScrollView>

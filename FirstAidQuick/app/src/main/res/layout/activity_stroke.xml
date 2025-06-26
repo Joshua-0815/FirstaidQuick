@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StrokeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Back Button -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:scaleType="fitStart"
+                app:srcCompat="?attr/homeAsUpIndicator" />
+        </FrameLayout>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Stroke"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <!-- Main Image -->
+        <ImageView
+            android:id="@+id/ivMainImage"
+            android:layout_width="match_parent"
+            android:layout_height="206dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/stroke" />
+
+        <!-- How to Help Section -->
+        <TextView
+            android:id="@+id/tvHowToHelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:text="Stroke: How to help"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp" />
+
+
+        <!-- Signs and Symptoms Section -->
+        <TextView
+            android:id="@+id/tvSymptomsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:text="Signs and Symptoms (Remember FAST)"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/tvSymptomsHeader"
+            android:background="#000000"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <!-- FAST Acronym Items -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivList1"
+                android:layout_width="99dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="-900dp"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/list" />
+
+            <TextView
+                android:id="@+id/tvFastF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="F - Face drooping (one side of face droops or is numb)"
+                android:textAlignment="textStart"
+                android:textColor="#000000" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivList2"
+                android:layout_width="99dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="-900dp"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/list" />
+
+            <TextView
+                android:id="@+id/tvFastA"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="A - Arm weakness (one arm is weak or numb)"
+                android:textAlignment="textStart"
+                android:textColor="#000000" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivList3"
+                android:layout_width="99dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="-900dp"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/list" />
+
+            <TextView
+                android:id="@+id/tvFastS"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="S - Speech difficulty (slurred speech or trouble speaking)"
+                android:textAlignment="textStart"
+                android:textColor="#000000" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivList4"
+                android:layout_width="99dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="-900dp"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/list" />
+
+            <TextView
+                android:id="@+id/tvFastT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="T - Time to call emergency services (note when symptoms started)"
+                android:textAlignment="textStart"
+                android:textColor="#000000" />
+        </FrameLayout>
+
+        <!-- Additional Symptoms -->
+        <TextView
+            android:id="@+id/tvOtherSymptoms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:text="Other symptoms may include:"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivList5"
+                android:layout_width="99dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="-900dp"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/list" />
+
+            <TextView
+                android:id="@+id/tvSymptom1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="Sudden severe headache with no known cause"
+                android:textAlignment="textStart"
+                android:textColor="#000000" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivList6"
+                android:layout_width="99dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="-900dp"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/list" />
+
+            <TextView
+                android:id="@+id/tvSymptom2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="Sudden trouble walking, dizziness, loss of balance"
+                android:textAlignment="textStart"
+                android:textColor="#000000" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivList7"
+                android:layout_width="99dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="-900dp"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/list" />
+
+            <TextView
+                android:id="@+id/tvSymptom3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="Sudden confusion or trouble understanding"
+                android:textAlignment="textStart"
+                android:textColor="#000000" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivList8"
+                android:layout_width="99dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="-900dp"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/list" />
+
+            <TextView
+                android:id="@+id/tvSymptom4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="Sudden trouble seeing in one or both eyes"
+                android:textAlignment="textStart"
+                android:textColor="#000000" />
+        </FrameLayout>
+
+        <!-- Emergency Steps Section -->
+        <TextView
+            android:id="@+id/tvEmergencySteps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:text="Emergency Steps"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/tvEmergencySteps"
+            android:background="#000000"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <!-- Step 1 -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvStep1Num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="1."
+                    android:textAlignment="viewStart"
+                    android:textColor="#F44336"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvStep1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Call emergency services immediately if you notice any stroke symptoms"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/tvStep1"
+            android:background="#A8A8A8"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <!-- Step 2 -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvStep2Num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="2."
+                    android:textAlignment="viewStart"
+                    android:textColor="#F44336"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvStep2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Note the time when symptoms first appeared (critical for treatment)"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/tvStep2"
+            android:background="#A8A8A8"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <!-- Step 3 -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvStep3Num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="3."
+                    android:textAlignment="viewStart"
+                    android:textColor="#F44336"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvStep3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Keep the person calm and comfortable"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/tvStep3"
+            android:background="#A8A8A8"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <!-- Step 4 -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvStep4Num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="4."
+                    android:textAlignment="viewStart"
+                    android:textColor="#F44336"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvStep4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Do not give them anything to eat or drink"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/tvStep4"
+            android:background="#A8A8A8"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <!-- Step 5 -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvStep5Num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="5."
+                    android:textAlignment="viewStart"
+                    android:textColor="#F44336"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvStep5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="If unconscious but breathing, place in recovery position"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/tvStep5"
+            android:background="#A8A8A8"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <!-- Step 6 -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvStep6Num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="6."
+                    android:textAlignment="viewStart"
+                    android:textColor="#F44336"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvStep6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="If not breathing, begin CPR if trained"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- Important Notes Section -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/tvImportantNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_arrow_drop_down"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:focusable="true"
+                android:padding="12dp"
+                android:text="Important Notes"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/parentNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/notesContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="40dp"
+                        android:text="• Time is critical - treatment is most effective within 3 hours of first symptoms"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="• Do not drive to the hospital - call emergency services for faster treatment"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="• Even if symptoms disappear, still seek immediate medical attention"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="• Be prepared to describe symptoms and when they began"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- AI Tips Section -->
+        <TextView
+            android:id="@+id/tvAiTips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading AI-generated first aid tips..."
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:background="#EFEFEF"
+            android:elevation="2dp"/>
+
+    </LinearLayout>
+</ScrollView>

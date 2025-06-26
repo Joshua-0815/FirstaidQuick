@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.firstaidquick">
+
+    <!-- 🔒 Add these permissions just under the <manifest> tag -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="FirstAid Quick"
+        android:icon="@drawable/firstaid_logo"
+        android:roundIcon="@drawable/firstaid_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FirstAidQuick">
+
+        <activity android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.FirstAidQuick">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BurnActivity" />
+        <activity android:name=".HeatActivity" />
+        <activity android:name=".FeverActivity"/>
+        <activity android:name=".FractureActivity"/>
+        <activity android:name=".ChokeActivity"/>
+        <activity android:name=".PoisonActivity"/>
+        <activity android:name=".ScrapeActivity"/>
+        <activity android:name=".StrokeActivity"/>
+
+        <activity android:name=".SymptomCheckerActivity" />
+
+    </application>
+
+</manifest>
