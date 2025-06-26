@@ -1,12 +1,13 @@
 # First Aid Quick 
 
-![508393594_1068284428569542_4219316775544749102_n](https://github.com/user-attachments/assets/3a2f3d6b-94be-4575-b793-67c100899170)
+![ChatGPT Image Jun 26, 2025, 10_10_53 AM](https://github.com/user-attachments/assets/19d5febf-68ad-4bec-b1ac-2270c1868ca9)
 
 
 
 This study focuses on the development and implementation of a First Aid Quick App designed to assist users in identifying symptoms and gaining essential first aid knowledge through mobile technology. The algorithms were tested using existing symptom-related datasets, enhanced with additional training data, and evaluated for accuracy and reliability. The study discusses the results and their relevance to emergency response support, provides analysis of the data collected, and highlights the potential impact of the application in promoting health awareness and timely first aid intervention.
 
 
+![508393594_1068284428569542_4219316775544749102_n](https://github.com/user-attachments/assets/3a2f3d6b-94be-4575-b793-67c100899170)
 
 ## Overview
 This study presents the development of the First Aid Quick App, an Android/iOS application that provides instant symptom assessment and first aid guidance. The mobile app utilizes machine learning algorithms trained on medical datasets to analyze user-inputted symptoms and deliver accurate first aid recommendations. Key features include:
